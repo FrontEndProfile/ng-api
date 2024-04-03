@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng run APP_NAME:serve-ssr",
+    "build": "ng build && ng run APP_NAME:serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ng-api": "node dist/ng-api/server/server.mjs"
-  },
+  }, 
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",

@@ -1,0 +1,3 @@
+/card-detail/Harding-211
+/card-detail/JamesBoyd-618
+/card-detail/Mobiletesting-309
