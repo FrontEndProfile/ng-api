@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CardService } from './card.service';
+
 
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'ng-api';
 
 
-  constructor(private cardService: CardService) {}
+  constructor() {}
 
   ngOnInit(): void {
     // // Example usage: Fetch all cards
