@@ -16,7 +16,7 @@ export class CardDetailComponent implements OnInit {
   ngOnInit(): void {
     this.cardId = this.route.snapshot.paramMap.get('name');
     this.cardService.getCardById(this.cardId).subscribe(data => {
-      console.log(data)
+      // console.log(data)
       this.cardDetails = data; // Assuming 'fields' is the key for card details in the API response
     });
   }
