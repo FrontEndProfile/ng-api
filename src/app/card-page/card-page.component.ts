@@ -16,7 +16,7 @@ export class CardPageComponent implements OnInit {
   ngOnInit(): void {
     this.cardService.getAllCards().subscribe((data) => {
       this.cards = data;
-      // console.log(this.cards)
+      console.log(this.cards)
     });
   }
 
