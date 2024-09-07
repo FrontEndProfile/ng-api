@@ -1,18 +1,7 @@
 <div *ngFor="let card of cards">
-    <div>
-        <p>Card ID: {{ card.id }}</p>
-        <p>Card Name: {{ card.card_name }}</p>
-      <p>Card Publish: {{ card.card_publish ? 'Published' : 'Not Published' }}</p>
-      <p>Media Base Alt: {{ card.media_base_alt }}</p>
-      <p>Media Base Name: {{ card.media_base_name }}</p>
-      <p>Media Base URL: {{ card.media_base_url }}</p>
-      <!-- Add similar lines for other media fields as needed -->
-       <!-- Add similar lines for other media fields as needed -->
-       <div *ngIf="card.product_description_editor">Product Description: <span [innerHTML]="card.product_description_editor"></span></div>
-       <div *ngIf="card.product_detail_editor">Product Detail: <span [innerHTML]="card.product_detail_editor"></span></div>
-       <div *ngIf="card.product_info_editor">Product Info: <span [innerHTML]="card.product_info_editor"></span></div>
-       <div *ngIf="card.product_scenarios_editor">Product Scenarios: <span [innerHTML]="card.product_scenarios_editor"></span></div>
+    <div class="card" style="border: 1px solid darkblue; padding: 16px;">
+        <p>Blog Name: {{ card.blog_name }}</p>
+        <img width="200" [src]="card.media_base_url" [alt]="card.media_base_alt">
+        <a [routerLink]="['/card-detail', card.id]" style="display: block;">View Details</a>
     </div>
-    <a [routerLink]="['/card-detail', card.id]">View Details</a>
 </div>
-  

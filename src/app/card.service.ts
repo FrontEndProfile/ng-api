@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CardService {
-  private apiUrl = 'https://firestore.googleapis.com/v1/projects/ng-asmco/databases/(default)/documents/blogs';
+  private apiUrl = 'https://firestore.googleapis.com/v1/projects/ng-asmco/databases/(default)/documents/git';
   constructor(private http: HttpClient) {}
 
   getAllCards(): Observable<any[]> {

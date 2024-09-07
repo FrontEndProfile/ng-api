@@ -1,16 +1,10 @@
 <div *ngIf="cardDetails">
 
+    <div>
+        <p>Blog Name: {{ cardDetails.blog_name }}</p>
+        <img width="200" [src]="cardDetails.media_base_url" [alt]="cardDetails.media_base_alt">
+        <div *ngIf="cardDetails.blog_richText">Product Description: <span
+                [innerHTML]="cardDetails.blog_richText"></span></div>
 
-  <div>
-    <p>Card ID: {{ cardDetails.id }}</p>
-    <p>Card Name: {{ cardDetails.card_name }}</p>
-  <p>Card Publish: {{ cardDetails.card_publish ? 'Published' : 'Not Published' }}</p>
-  <p>Media Base Name: {{ cardDetails.media_base_name }}</p>
-  <img [src]="cardDetails.media_base_url " alt="" width="100">
-  <!-- Add similar lines for other media fields as needed -->
-   <!-- Add similar lines for other media fields as needed -->
-   <div *ngIf="cardDetails.product_description_editor">Product Description: <span [innerHTML]="cardDetails.product_description_editor"></span></div>
-   <div *ngIf="cardDetails.product_detail_editor">Product Detail: <span [innerHTML]="cardDetails.product_detail_editor"></span></div>
-   <div *ngIf="cardDetails.product_info_editor">Product Info: <span [innerHTML]="cardDetails.product_info_editor"></span></div>
-   <div *ngIf="cardDetails.product_scenarios_editor">Product Scenarios: <span [innerHTML]="cardDetails.product_scenarios_editor"></span></div>
+    </div>
 </div>
